@@ -30,6 +30,18 @@ class ViewController: UIViewController {
         inputField.leftView = leftPadding
         inputField.leftViewMode = .always
     }
+    
+    @IBAction func onLoginButtonPressed() {
+        // To Do: need to add an API call
+        onLoginSuccess()
+    }
+    
+    func onLoginSuccess() {
+        let mainVC = MainViewController(nibName: "MainViewController", bundle: nil)
+        let navVC = UINavigationController(rootViewController: mainVC)
+        navVC.modalPresentationStyle = .fullScreen
+        self.present(navVC, animated: true, completion: nil)
+    }
 
 }
 
