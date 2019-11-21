@@ -8,13 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		B65F1032237357E600C197CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65F1031237357E600C197CA /* AppDelegate.swift */; };
-		B65F1034237357E600C197CA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65F1033237357E600C197CA /* SceneDelegate.swift */; };
 		B65F1036237357E600C197CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65F1035237357E600C197CA /* ViewController.swift */; };
 		B65F1039237357E600C197CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B65F1037237357E600C197CA /* Main.storyboard */; };
 		B65F103B237357E800C197CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B65F103A237357E800C197CA /* Assets.xcassets */; };
 		B65F103E237357E800C197CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B65F103C237357E800C197CA /* LaunchScreen.storyboard */; };
 		B65F1049237357E800C197CA /* RelaxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65F1048237357E800C197CA /* RelaxTests.swift */; };
 		B65F1054237357E800C197CA /* RelaxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65F1053237357E800C197CA /* RelaxUITests.swift */; };
+		B65F106223735C2C00C197CA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65F106123735C2C00C197CA /* SceneDelegate.swift */; };
+		B65F106A23735EDD00C197CA /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B65F106923735EDD00C197CA /* NotificationCenter.framework */; };
+		B65F106D23735EDD00C197CA /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65F106C23735EDD00C197CA /* TodayViewController.swift */; };
+		B65F107023735EDD00C197CA /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B65F106E23735EDD00C197CA /* MainInterface.storyboard */; };
+		B65F107423735EDD00C197CA /* RelaxExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B65F106723735EDD00C197CA /* RelaxExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,12 +36,32 @@
 			remoteGlobalIDString = B65F102D237357E600C197CA;
 			remoteInfo = Relax;
 		};
+		B65F107223735EDD00C197CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B65F1026237357E600C197CA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B65F106623735EDD00C197CA;
+			remoteInfo = RelaxExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B65F107823735EDD00C197CA /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B65F107423735EDD00C197CA /* RelaxExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		B65F102E237357E600C197CA /* Relax.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Relax.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B65F1031237357E600C197CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B65F1033237357E600C197CA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		B65F1035237357E600C197CA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B65F1038237357E600C197CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B65F103A237357E800C197CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +73,12 @@
 		B65F104F237357E800C197CA /* RelaxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RelaxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B65F1053237357E800C197CA /* RelaxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelaxUITests.swift; sourceTree = "<group>"; };
 		B65F1055237357E800C197CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B65F106123735C2C00C197CA /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B65F106723735EDD00C197CA /* RelaxExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = RelaxExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		B65F106923735EDD00C197CA /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		B65F106C23735EDD00C197CA /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		B65F106F23735EDD00C197CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		B65F107123735EDD00C197CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +103,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B65F106423735EDD00C197CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B65F106A23735EDD00C197CA /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -82,6 +120,8 @@
 				B65F1030237357E600C197CA /* Relax */,
 				B65F1047237357E800C197CA /* RelaxTests */,
 				B65F1052237357E800C197CA /* RelaxUITests */,
+				B65F106B23735EDD00C197CA /* RelaxExtension */,
+				B65F106823735EDD00C197CA /* Frameworks */,
 				B65F102F237357E600C197CA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -92,6 +132,7 @@
 				B65F102E237357E600C197CA /* Relax.app */,
 				B65F1044237357E800C197CA /* RelaxTests.xctest */,
 				B65F104F237357E800C197CA /* RelaxUITests.xctest */,
+				B65F106723735EDD00C197CA /* RelaxExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -100,8 +141,8 @@
 			isa = PBXGroup;
 			children = (
 				B65F1031237357E600C197CA /* AppDelegate.swift */,
-				B65F1033237357E600C197CA /* SceneDelegate.swift */,
 				B65F1035237357E600C197CA /* ViewController.swift */,
+				B65F106123735C2C00C197CA /* SceneDelegate.swift */,
 				B65F1037237357E600C197CA /* Main.storyboard */,
 				B65F103A237357E800C197CA /* Assets.xcassets */,
 				B65F103C237357E800C197CA /* LaunchScreen.storyboard */,
@@ -128,6 +169,24 @@
 			path = RelaxUITests;
 			sourceTree = "<group>";
 		};
+		B65F106823735EDD00C197CA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B65F106923735EDD00C197CA /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B65F106B23735EDD00C197CA /* RelaxExtension */ = {
+			isa = PBXGroup;
+			children = (
+				B65F106C23735EDD00C197CA /* TodayViewController.swift */,
+				B65F106E23735EDD00C197CA /* MainInterface.storyboard */,
+				B65F107123735EDD00C197CA /* Info.plist */,
+			);
+			path = RelaxExtension;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,10 +197,12 @@
 				B65F102A237357E600C197CA /* Sources */,
 				B65F102B237357E600C197CA /* Frameworks */,
 				B65F102C237357E600C197CA /* Resources */,
+				B65F107823735EDD00C197CA /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				B65F107323735EDD00C197CA /* PBXTargetDependency */,
 			);
 			name = Relax;
 			productName = Relax;
@@ -184,6 +245,23 @@
 			productReference = B65F104F237357E800C197CA /* RelaxUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		B65F106623735EDD00C197CA /* RelaxExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B65F107523735EDD00C197CA /* Build configuration list for PBXNativeTarget "RelaxExtension" */;
+			buildPhases = (
+				B65F106323735EDD00C197CA /* Sources */,
+				B65F106423735EDD00C197CA /* Frameworks */,
+				B65F106523735EDD00C197CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RelaxExtension;
+			productName = RelaxExtension;
+			productReference = B65F106723735EDD00C197CA /* RelaxExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -205,6 +283,9 @@
 						CreatedOnToolsVersion = 11.1;
 						TestTargetID = B65F102D237357E600C197CA;
 					};
+					B65F106623735EDD00C197CA = {
+						CreatedOnToolsVersion = 11.1;
+					};
 				};
 			};
 			buildConfigurationList = B65F1029237357E600C197CA /* Build configuration list for PBXProject "Relax" */;
@@ -221,6 +302,7 @@
 			projectRoot = "";
 			targets = (
 				B65F102D237357E600C197CA /* Relax */,
+				B65F106623735EDD00C197CA /* RelaxExtension */,
 				B65F1043237357E800C197CA /* RelaxTests */,
 				B65F104E237357E800C197CA /* RelaxUITests */,
 			);
@@ -252,6 +334,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B65F106523735EDD00C197CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B65F107023735EDD00C197CA /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -261,7 +351,7 @@
 			files = (
 				B65F1036237357E600C197CA /* ViewController.swift in Sources */,
 				B65F1032237357E600C197CA /* AppDelegate.swift in Sources */,
-				B65F1034237357E600C197CA /* SceneDelegate.swift in Sources */,
+				B65F106223735C2C00C197CA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +371,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B65F106323735EDD00C197CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B65F106D23735EDD00C197CA /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -293,6 +391,11 @@
 			isa = PBXTargetDependency;
 			target = B65F102D237357E600C197CA /* Relax */;
 			targetProxy = B65F1050237357E800C197CA /* PBXContainerItemProxy */;
+		};
+		B65F107323735EDD00C197CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B65F106623735EDD00C197CA /* RelaxExtension */;
+			targetProxy = B65F107223735EDD00C197CA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -311,6 +414,14 @@
 				B65F103D237357E800C197CA /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B65F106E23735EDD00C197CA /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B65F106F23735EDD00C197CA /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -433,6 +544,7 @@
 		B65F1059237357E800C197CA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Relax/Info.plist;
@@ -443,13 +555,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = BitmagicSolutions.Relax;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		B65F105A237357E800C197CA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Relax/Info.plist;
@@ -460,7 +573,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = BitmagicSolutions.Relax;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -544,6 +657,42 @@
 			};
 			name = Release;
 		};
+		B65F107623735EDD00C197CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RelaxExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = BitmagicSolutions.Relax.RelaxExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B65F107723735EDD00C197CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RelaxExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = BitmagicSolutions.Relax.RelaxExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -579,6 +728,15 @@
 			buildConfigurations = (
 				B65F105F237357E800C197CA /* Debug */,
 				B65F1060237357E800C197CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B65F107523735EDD00C197CA /* Build configuration list for PBXNativeTarget "RelaxExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B65F107623735EDD00C197CA /* Debug */,
+				B65F107723735EDD00C197CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

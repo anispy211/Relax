@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="M4Y-Lb-cyx">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Today View Controller-->
+        <scene sceneID="cwh-vc-ff4">
+            <objects>
+                <viewController id="M4Y-Lb-cyx" customClass="TodayViewController" customModule="RelaxExtension" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" simulatedAppContext="notificationCenter" id="S3S-Oj-5AN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="37"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gRp-TY-X9t">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="37"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="123" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P42-Sn-pH6">
+                                        <rect key="frame" x="155" y="8" width="155" height="21"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconfinder_face-smile_118880" translatesAutoresizingMaskIntoConstraints="NO" id="zhr-UP-gBA">
+                                        <rect key="frame" x="105" y="-1.5" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="L0u-Qb-lys"/>
+                                            <constraint firstAttribute="width" constant="40" id="Le9-S2-jsu"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="P42-Sn-pH6" secondAttribute="bottom" constant="8" id="6FN-Ir-jNm"/>
+                                    <constraint firstItem="P42-Sn-pH6" firstAttribute="leading" secondItem="zhr-UP-gBA" secondAttribute="trailing" constant="10" id="EtQ-Hn-zVC"/>
+                                    <constraint firstItem="zhr-UP-gBA" firstAttribute="centerX" secondItem="gRp-TY-X9t" secondAttribute="centerX" constant="-35" id="LZv-1i-77N"/>
+                                    <constraint firstAttribute="trailing" secondItem="P42-Sn-pH6" secondAttribute="trailing" constant="10" id="P38-qS-zpR"/>
+                                    <constraint firstItem="zhr-UP-gBA" firstAttribute="centerY" secondItem="gRp-TY-X9t" secondAttribute="centerY" id="ScU-Ac-mgN"/>
+                                    <constraint firstItem="P42-Sn-pH6" firstAttribute="top" secondItem="gRp-TY-X9t" secondAttribute="top" constant="8" id="m3K-TH-Xpz"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="gRp-TY-X9t" secondAttribute="bottom" id="7zF-Az-Hh2"/>
+                            <constraint firstItem="gRp-TY-X9t" firstAttribute="leading" secondItem="ssy-KU-ocm" secondAttribute="leading" id="LDd-TL-F1O"/>
+                            <constraint firstItem="gRp-TY-X9t" firstAttribute="top" secondItem="S3S-Oj-5AN" secondAttribute="top" id="eGS-Ec-HMg"/>
+                            <constraint firstItem="ssy-KU-ocm" firstAttribute="trailing" secondItem="gRp-TY-X9t" secondAttribute="trailing" id="p5f-ex-G9Z"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ssy-KU-ocm"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="37"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.61160714285714"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="iconfinder_face-smile_118880" width="512" height="512"/>
+    </resources>
+</document>

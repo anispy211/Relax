@@ -10,11 +10,26 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var inputField: UITextField!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        setupUI()
     }
-
+    
+    func setupUI() {
+        loginButton.layer.cornerRadius = 15
+        loginButton.layer.borderWidth = 1.5
+        inputField.layer.cornerRadius = 15
+        inputField.layer.borderWidth = 1.5
+        loginButton.layer.borderColor = #colorLiteral(red: 0.1837867498, green: 0.4883144498, blue: 0.8014778495, alpha: 1)
+        inputField.layer.borderColor = #colorLiteral(red: 0.1837867498, green: 0.4883144498, blue: 0.8014778495, alpha: 1)
+        let leftPadding = UIView(frame: CGRect(x: 0, y: 0, width: 20, height: 30))
+        inputField.leftView = leftPadding
+        inputField.leftViewMode = .always
+    }
 
 }
 
