@@ -10,7 +10,7 @@
         <!--Today View Controller-->
         <scene sceneID="cwh-vc-ff4">
             <objects>
-                <viewController id="M4Y-Lb-cyx" customClass="TodayViewController" customModule="RelaxExtension" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="M4Y-Lb-cyx" customClass="TodayViewController" customModule="Relax1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" simulatedAppContext="notificationCenter" id="S3S-Oj-5AN">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="37"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -19,26 +19,33 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="37"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="123" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P42-Sn-pH6">
-                                        <rect key="frame" x="155" y="8" width="155" height="21"/>
+                                        <rect key="frame" x="150" y="8" width="160" height="21"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
-                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconfinder_face-smile_118880" translatesAutoresizingMaskIntoConstraints="NO" id="zhr-UP-gBA">
-                                        <rect key="frame" x="105" y="-1.5" width="40" height="40"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="daK-jb-EKE">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="37"/>
+                                    </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_relax" translatesAutoresizingMaskIntoConstraints="NO" id="zhr-UP-gBA">
+                                        <rect key="frame" x="85" y="-9" width="80" height="55"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="L0u-Qb-lys"/>
-                                            <constraint firstAttribute="width" constant="40" id="Le9-S2-jsu"/>
+                                            <constraint firstAttribute="height" constant="55" id="L0u-Qb-lys"/>
+                                            <constraint firstAttribute="width" constant="80" id="Le9-S2-jsu"/>
                                         </constraints>
                                     </imageView>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" red="0.41093999147415161" green="0.61569136381149292" blue="0.24304628372192383" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
+                                    <constraint firstItem="daK-jb-EKE" firstAttribute="top" secondItem="gRp-TY-X9t" secondAttribute="top" id="24S-wi-svX"/>
                                     <constraint firstAttribute="bottom" secondItem="P42-Sn-pH6" secondAttribute="bottom" constant="8" id="6FN-Ir-jNm"/>
-                                    <constraint firstItem="P42-Sn-pH6" firstAttribute="leading" secondItem="zhr-UP-gBA" secondAttribute="trailing" constant="10" id="EtQ-Hn-zVC"/>
+                                    <constraint firstAttribute="bottom" secondItem="daK-jb-EKE" secondAttribute="bottom" id="9MU-pT-zOI"/>
+                                    <constraint firstItem="P42-Sn-pH6" firstAttribute="leading" secondItem="zhr-UP-gBA" secondAttribute="trailing" constant="-15" id="EtQ-Hn-zVC"/>
                                     <constraint firstItem="zhr-UP-gBA" firstAttribute="centerX" secondItem="gRp-TY-X9t" secondAttribute="centerX" constant="-35" id="LZv-1i-77N"/>
                                     <constraint firstAttribute="trailing" secondItem="P42-Sn-pH6" secondAttribute="trailing" constant="10" id="P38-qS-zpR"/>
+                                    <constraint firstAttribute="trailing" secondItem="daK-jb-EKE" secondAttribute="trailing" id="PJm-lN-bjc"/>
                                     <constraint firstItem="zhr-UP-gBA" firstAttribute="centerY" secondItem="gRp-TY-X9t" secondAttribute="centerY" id="ScU-Ac-mgN"/>
+                                    <constraint firstItem="daK-jb-EKE" firstAttribute="leading" secondItem="gRp-TY-X9t" secondAttribute="leading" id="cFN-03-5FX"/>
                                     <constraint firstItem="P42-Sn-pH6" firstAttribute="top" secondItem="gRp-TY-X9t" secondAttribute="top" constant="8" id="m3K-TH-Xpz"/>
                                 </constraints>
                             </view>
@@ -54,6 +61,11 @@
                     <extendedEdge key="edgesForExtendedLayout"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="37"/>
+                    <connections>
+                        <outlet property="bgView" destination="gRp-TY-X9t" id="0es-PR-JB3"/>
+                        <outlet property="countLabel" destination="P42-Sn-pH6" id="WTN-6F-WVw"/>
+                        <outlet property="statusImageView" destination="zhr-UP-gBA" id="Rpm-tk-JUG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -61,6 +73,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="iconfinder_face-smile_118880" width="512" height="512"/>
+        <image name="icon_relax" width="550" height="343"/>
     </resources>
 </document>
